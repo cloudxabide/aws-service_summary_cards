@@ -15,6 +15,19 @@ I *think* asciidoc might be a good way to approach this.  Github markdown is not
 
 ```
 SERVICE_NAME="EC2"
-mkdir -p ${SERVICE_NAME}/{What,Who,Where,When,Why}.adoc
-[ ! -f ${SERVICE_NAME}/main.adoc ] && { echo "# $SERVICE_NAME" > ${SERVICE_NAME}/main.adoc; }
+mkdir -p ${SERVICE_NAME}/
+
+for FILE in What Who Where When Why;
+do 
+  [ ! -f ${SERVICE_NAME}/${FILE}.adoc ] && { echo "= $FILE" > ${SERVICE_NAME}/${FILE}.adoc; }
+done
+[ ! -f ${SERVICE_NAME}/main.adoc ] && { 
+echo "= $SERVICE_NAME" > ${SERVICE_NAME}/main.adoc
+for FILE in What Who Where When Why;
+do 
+  echo ""
+  echo "include::$FILE.adoc[]" >> ${SERVICE_NAME}/main.adoc
+done
+}
+
 ```
