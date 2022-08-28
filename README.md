@@ -6,15 +6,15 @@ I *think* asciidoc might be a good way to approach this.  Github markdown is not
 
 ## Formatting of Directory
 
-.
-├── EC2
-│   ├── What.adoc
-│   ├── When.adoc
-│   ├── Where.adoc
-│   ├── Who.adoc
-│   ├── Why.adoc
-│   └── main.adoc
-
+.  
+├── EC2  
+│   ├── What.adoc  
+│   ├── When.adoc  
+│   ├── Where.adoc  
+│   ├── Who.adoc  
+│   ├── Why.adoc  
+│   └── main.adoc  
+  
 ## Create new Service Summary Directory
 
 ```
