@@ -1,7 +1,7 @@
 = EC2
 
-include::What.adoc[]
-include::Who.adoc[]
-include::Where.adoc[]
-include::When.adoc[]
-include::Why.adoc[]
+include::What.adoc[leveloffset=+1]
+include::Who.adoc[leveloffset=+1]
+include::Where.adoc[leveloffset=+1]
+include::When.adoc[leveloffset=+1]
+include::Why.adoc[leveloffset=+1]
