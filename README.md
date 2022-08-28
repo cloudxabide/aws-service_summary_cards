@@ -4,15 +4,17 @@ STATUS: pre-beta testing some stuff
 
 I *think* asciidoc might be a good way to approach this.  Github markdown is not universal, but maybe universal enough?
 
-## Format
-```
-(ServiceName)/What  
-             /Who  
-             /Where  
-             /When  
-             /Why  
-```
- 
+## Formatting of Directory
+
+.
+├── EC2
+│   ├── What.adoc
+│   ├── When.adoc
+│   ├── Where.adoc
+│   ├── Who.adoc
+│   ├── Why.adoc
+│   └── main.adoc
+
 ## Create new Service Summary Directory
 
 ```
